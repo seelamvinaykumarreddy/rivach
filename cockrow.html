@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivach | Cockrow Case-Study</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/fav.png">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="js/nav.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $(".overlay").css("background", "#FFFFFF");
+                    $(".overlay").css("color", "#000000")
+                    $(".overlay").css('box-shadow', '0 8px 6px -5px rgb(129, 126, 126)');
+
+
+                } else {
+                    $(".overlay").css("background", "white");
+                    $(".overlay").css('box-shadow', '0px 0px 0px 0px rgb(129, 126, 126)');
+                    $(".overlay").css("color", "black");
+
+                }
+            })
+        })
+    </script>
+
+    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="aos.js">
+    <style type="text/css">
+        #box {
+            transition: .1s;
+        }
+        
+        #box:hover {
+            z-index: 0;
+            background-color: #f6fbfc;
+            transform: scale(1.05);
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
+        
+        .cont:hover {
+            transition: .3s;
+            transform: scale(1.09);
+            border-radius: 5px;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        @media screen and (max-width: 767px) {
+            html {
+                scroll-behavior: smooth;
+            }
+            .navicon {
+                font-size: xx-large;
+                margin-left: 400%;
+                margin-top: -170%;
+            }
+            .navicon::before {
+                top: 5px;
+            }
+            .navicon::after {
+                top: -5px;
+            }
+            .menu-btn:not(:checked)~.menu {
+                display: none;
+            }
+            .menu-btn:checked~.menu {
+                display: block;
+            }
+            .menu-btn:checked~.menu-icon .navicon {
+                background: transparent;
+            }
+            .menu-btn:checked~.menu-icon .navicon::before {
+                transform: rotate(-45deg);
+            }
+            .menu-btn:checked~.menu-icon .navicon::after {
+                transform: rotate(45deg);
+            }
+            .menu-btn:checked~.menu-icon .navicon::before,
+            .menu-btn:checked~.menu-icon .navicon::after {
+                top: 0;
+            }
+        }
+        
+        <!--footer css-->body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        
+        header {
+            transform-style: preserve-3d;
+            position: relative;
+            top: 0;
+            transition: top 0.3s ease-in-out;
+            z-index: 100000;
+        }
+        
+        .nav-up {
+            top: -110px;
+        }
+        
+        .naav ul li ul {
+            display: none;
+        }
+        
+        .naav ul li:hover ul {
+            display: block;
+        }
+        
+        .naav ul li ul {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .naav ul li:hover ul {
+            display: block;
+            color: #000000;
+            background-color: whitesmoke;
+            border-top-right-radius: 2%;
+            border-bottom-left-radius: 2%;
+            border-bottom-right-radius: 2%;
+            padding: 1%;
+            z-index: 1;
+        }
+        
+        #whycentella h2 {
+            font-weight: bold;
+        }
+        
+        .logo {
+            animation: movedown 1s linear 1;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+            z-index: 10;
+        }
+        
+        @keyframes movedown {
+            0% {
+                transform: translateY(-100px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateY(0);
+                visibility: visible;
+            }
+        }
+        
+        .menu {
+            animation: movedown 1s linear 1;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+            z-index: 10;
+        }
+        
+        .sol1 {
+            animation: moveright 1s linear 1;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+        /* .sol1 {
+            animation: MoveUpDown 1s linear infinite;
+            position: relative;
+            left: 0;
+            bottom: 0;
+        } */
+        
+        @keyframes moveup {
+            0% {
+                transform: translateY(0px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateY(-50);
+                visibility: visible;
+            }
+        }
+        
+        @keyframes moveleft {
+            0% {
+                transform: translateX(100px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateX(0);
+                visibility: visible;
+            }
+        }
+        
+        @keyframes moveright {
+            0% {
+                transform: translateX(-100px);
+                visibility: visible;
+            }
+            100% {
+                transform: translateX(0);
+                visibility: visible;
+            }
+        }
+        
+        @keyframes MoveUpDown {
+            0%,
+            100% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 20px;
+            }
+        }
+        
+        body {
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
+        }
+        
+        html {
+            overflow-x: hidden;
+        }
+        
+        @media only screen and (max-width:767px) {
+            html {
+                scroll-behavior: smooth;
+            }
+            .naav {
+                background-color: white;
+            }
+            .menu {
+                background-color: white;
+                color: #000000;
+                padding-top: 0%;
+                margin-left: 0%;
+                width: 100%;
+                font-size: 16px;
+                animation: moveright .1s linear 1;
+                visibility: hidden;
+                animation-fill-mode: forwards;
+                position: relative;
+                z-index: 10;
+            }
+            .logo {
+                margin-left: 3%;
+                width: 336px;
+            }
+            .footer-left img {
+                margin-left: 1% !important;
+            }
+        }
+        
+        .contact {
+            position: relative;
+            display: inline-block;
+            padding: 8px 40px;
+            text-decoration: none;
+            color: #1a1a1a;
+            background: #35CFFF;
+            font-family: poppins;
+            font-weight: bold;
+            transition: .5s;
+        }
+        
+        .contact:hover {
+            cursor: pointer;
+            background: #74FDDC;
+        }
+        
+        body {
+            font-family: poppins;
+        }
+        
+        <!--footer-->* {
+            font-family: Open Sans;
+        }
+        
+        .footer-distributed {
+            background: #101010;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+            padding: 55px 50px;
+        }
+        
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+            display: inline-block;
+            vertical-align: top;
+        }
+        /* Footer left */
+        
+        .footer-distributed .footer-left {
+            width: 40%;
+        }
+        /* The company logo */
+        
+        .footer-distributed h3 {
+            color: #ffffff;
+            font: normal 36px "Open Sans", cursive;
+            margin: 0;
+        }
+        
+        .footer-distributed h3 span {
+            color: lightseagreen;
+        }
+        /* Footer links */
+        
+        .footer-distributed .footer-links {
+            color: #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+        }
+        
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            font-weight: 400;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .footer-distributed .footer-company-name {
+            color: rgb(165, 165, 165);
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+        }
+        /* Footer Center */
+        
+        .footer-distributed .footer-center {
+            width: 35%;
+        }
+        
+        .footer-distributed .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+        
+        .footer-distributed .footer-center i.fa-envelope {
+            font-size: 17px;
+            line-height: 38px;
+        }
+        
+        .footer-distributed .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            font-weight: 400;
+            vertical-align: middle;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-center p span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
+        }
+        
+        .footer-distributed .footer-center p a {
+            color: lightseagreen;
+            text-decoration: none;
+        }
+        
+        .footer-distributed .footer-links a:before {
+            content: "|";
+            font-weight: 300;
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        
+        .footer-distributed .footer-links .link-1:before {
+            content: none;
+        }
+        /* Footer Right */
+        
+        .footer-distributed .footer-right {
+            width: 20%;
+        }
+        
+        .footer-distributed .footer-company-about {
+            line-height: 20px;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-company-about span {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .footer-distributed .footer-icons {
+            margin-top: 25px;
+        }
+        
+        .footer-distributed .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #1581c5;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+        
+        .footer-icons a:hover {
+            background: #03be7a;
+        }
+        /* If you don't want the footer to be responsive, remove these media queries */
+        
+        @media (max-width: 880px) {
+            .footer-distributed {
+                font: bold 14px poppins;
+            }
+            .footer-distributed .footer-left,
+            .footer-distributed .footer-center,
+            .footer-distributed .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: left;
+            }
+            .footer-distributed .footer-center i {
+                margin-left: 0;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="mx-0  naav">
+        <header class=" fixed nav-down mx-auto  w-full ">
+
+            <div class=" overlay mx-auto object-center  flex flex-wrap flex-col md:flex-row  " id="bar" style="background-color:white;color: white;">
+                <a class="logo flex  items-center  mb-0 mr-auto md:ml-auto " href="index.html">
+                    <img class=" w-31 h-24 p-0 " src="images/logo.png" alt="">
+
+                </a>
+                <nav id="nvb" class="menu  md:py-2 md:pl-4  md:border-gray-100 z-100 ml-16 mr-auto	flex flex-wrap items-center  justify-center ">
+                    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+                    <label class="menu-icon block cursor-pointer md:hidden px-2 py-0 relative " style="position: relative;top:-15px ;padding-left: 25%;padding-top: 0%;" for="menu-btn">
+    <span class=" navicon flex object-center relative " ><i class="fa fa-bars"></i> </span>
+  </label>
+                    <ul class="menu text-black border-b md:border-none text-lg flex justify-end list-reset m-0    " style="font-weight: bold;font-family: poppins;">
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="#who-we-serve">Who we serve</a></li>
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="#portfolio">Portfolio</a></li>
+
+                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="#testimonial">Testimonials</a></li>
+                        <li class="active border-t md:border-none"><a class="m-4 mr-40 hover:text-blue-600" href="#team">Team</a></li>
+
+                    </ul>
+                    <button class="contact  menu text-lg   py-0 px-8   rounded text-black mt-0"> <a href="#connect"> Get Quote </a><span></span><span></span><span></span><span></span></button>
+
+
+                </nav>
+            </div>
+        </header>
+    </div>
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <img class="w-80 mb-0 object-cover object-center rounded" alt="hero" src="images/case.png">
+            <div class="text-center lg:w-2/3 w-full">
+                <h1 class="title-font text-4xl  mb-2 font-medium text-gray-900">Comming Soon </h1>
+                <p class="text-2xl">Stay tunded</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <img src="images/logo.png" class="h-24 -ml-4 footerimg" alt="">
+
+                <p class="footer-links">
+                    <a href="#" class="link-1">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Our Projects</a>
+
+                    <a href="#">Who we serve</a>
+                    <a href="#">Contact us</a>
+                </p>
+
+                <p class="footer-company-name">Copyright © 2020 Rivach PLC. All rights reserved.</p>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Nizampet</span> Hyderabad, Telangana</p>
+                </div>
+
+                <!--<div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1.555.555.5555</p>
+                </div>
+-->
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@rivach.com">support@rivach.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>Our Social Media</span> Follow us </p>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </section>
+    <!--Scripts-->
+    <script>
+        $("#submit ").click(function() {
+            alert("Successfully Submited ");
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#your_form_id').on('submit', function(evt) {
+                evt.preventDefault();
+                setTimeout(function() {
+                    window.location.reload();
+                }, 0);
+                this.submit();
+            });
+        });
+    </script>
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <!--https://script.google.com/macros/s/AKfycbyKGU_7weZjdMIcVZHL2hmRXN51voYwmM9rWnc_U-QpfNOt2iMT/exec-->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx1w2b7QgeodBvElebJ811SK0ZJzPvcJhgkGIaSIj2Ivmv6B5c/exec'
+        const form = document.forms['submit-to-google-sheet']
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="aos.js "></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <!---->
+    <script src="js/header-9.js"></script>
+
+    <script>
+        var test = document.getElementById('test');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+
+        control1.onclick = function() {
+            test.style.transform = "translateX(900px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+        control2.onclick = function() {
+            test.style.transform = "translateX(0px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+        control3.onclick = function() {
+            test.style.transform = "translateX(-900px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+
+        }
+
+        setInterval(control1.onclick, 9000);
+        setInterval(control2.onclick, 18000);
+        setInterval(control3.onclick, 27000);
+    </script>
+</body>
+
+</html>
