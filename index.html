@@ -164,13 +164,6 @@
             font-weight: bold;
         }
         
-        .logo {
-            animation: movedown 1s linear 1;
-            visibility: hidden;
-            animation-fill-mode: forwards;
-            z-index: 10;
-        }
-        
         @keyframes movedown {
             0% {
                 transform: translateY(-100px);
@@ -181,25 +174,25 @@
                 visibility: visible;
             }
         }
-        
-        .menu {
+        /* .menu {
             animation: movedown 1s linear 1;
             visibility: hidden;
             animation-fill-mode: forwards;
             z-index: 10;
         }
-        
-        .sol1 {
-            animation: moveright 1s linear 1;
+         .logo {
+            animation: movedown 1s linear 1;
             visibility: hidden;
             animation-fill-mode: forwards;
+            z-index: 10;
         }
-        /* .sol1 {
+       
+         .sol1 {
             animation: MoveUpDown 1s linear infinite;
             position: relative;
             left: 0;
             bottom: 0;
-        } */
+        } 
         
         .sol2 {
             animation: moveleft 1s linear 1;
@@ -211,7 +204,7 @@
             animation: moveleft 1s linear 1;
             visibility: hidden;
             animation-fill-mode: forwards;
-        }
+        }*/
         
         @keyframes moveup {
             0% {
@@ -388,7 +381,7 @@
                 font-size: 24px;
             }
             .what-we-do-text {
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 20px;
                 padding-right: 0%;
                 color: rgb(32, 32, 32);
@@ -577,7 +570,7 @@
             }
             .form input {
                 border-radius: 0px 5px 5px 0px;
-                border: 1px solid #7365AD;
+                border: 0px solid #7365AD !important;
                 margin-bottom: 15px !important;
                 width: 88% !important;
                 font-size: 12px;
@@ -591,7 +584,7 @@
             }
             .form textarea {
                 border-radius: 0px 5px 5px 0px;
-                border: 1px solid #927ee2;
+                border: 0px solid #927ee2 !important;
                 margin: 0;
                 background: #EFEFEF;
                 width: 88% !important;
@@ -921,7 +914,7 @@
         
         .form input {
             border-radius: 0px 5px 5px 0px;
-            border: 1px solid #7365AD;
+            border: 0px solid #7365AD;
             margin-bottom: 15px;
             width: 90%;
             height: 40px;
@@ -936,7 +929,7 @@
         
         .form textarea {
             border-radius: 0px 5px 5px 0px;
-            border: 1px solid #927ee2;
+            border: 0px solid #927ee2;
             margin: 0;
             background: #EFEFEF;
             width: 90%;
@@ -1183,14 +1176,22 @@
                 margin-left: 0;
             }
         }
+        
+        #loading {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #fff url('images/loading') no-repeat center;
+            z-index: 99999;
+        }
     </style>
 
 
 
 </head>
 
-<body>
-
+<body onload="myFunction()">
+    <div id="loading"></div>
 
     <div class="mx-0  naav">
         <header class=" fixed nav-down mx-auto  w-full ">
@@ -1637,6 +1638,13 @@
         setInterval(control1.onclick, 9000);
         setInterval(control2.onclick, 18000);
         setInterval(control3.onclick, 27000);
+    </script>
+    <script>
+        var preloader = document.getElementById('loading');
+
+        function myFunction() {
+            preloader.style.display = 'none';
+        }
     </script>
 </body>
 
