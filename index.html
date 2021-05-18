@@ -8,7 +8,7 @@
     <title>Rivach</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/fav.png">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -118,13 +118,7 @@
             }
         }
         
-        <!--footer css-->.overlay {
-            width: 150%;
-            position: absolute;
-            z-index: 100;
-        }
-        
-        body {
+        <!--footer css-->body {
             overflow-y: scroll;
             overflow-x: hidden;
         }
@@ -139,68 +133,6 @@
         
         .nav-up {
             top: -110px;
-        }
-        
-        .social-container {
-            width: 186px;
-            margin: 0vh auto;
-            margin-right: 1%;
-            text-align: center;
-        }
-        
-        .social-icons {
-            padding: 0;
-            list-style: none;
-            margin: .1em;
-        }
-        
-        .social-icons li {
-            display: inline-block;
-            margin: 0.18em;
-            position: relative;
-            font-size: 1.2em;
-        }
-        
-        .social-icons i {
-            color: #fff;
-            position: absolute;
-            top: 4px;
-            left: 4px;
-            transition: all 265ms ease-out;
-        }
-        
-        .social-icons a {
-            display: inline-block;
-        }
-        
-        .social-icons a:before {
-            transform: scale(1);
-            -ms-transform: scale(1);
-            -webkit-transform: scale(1);
-            content: " ";
-            width: 26px;
-            height: 26px;
-            border-radius: 100%;
-            display: block;
-            background: linear-gradient(45deg, #00B5F5, #002A8F);
-            transition: all 265ms ease-out;
-        }
-        
-        .social-icons a:hover:before {
-            transform: scale(0);
-            transition: all 265ms ease-in;
-        }
-        
-        .social-icons a:hover i {
-            transform: scale(2.2);
-            -ms-transform: scale(2.2);
-            -webkit-transform: scale(2.2);
-            color: #00B5F5;
-            background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
-            background-clip: content-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all 265ms ease-in;
         }
         
         .naav ul li ul {
@@ -344,11 +276,8 @@
             .naav {
                 background-color: white;
             }
-            .overlay {
-                background-color: white;
-                z-index: 1000;
-            }
             .hero {
+                z-index: -1 !important;
                 padding-top: 27%;
                 width: 100%;
                 font-size: 1vw;
@@ -367,29 +296,48 @@
                 animation-fill-mode: forwards;
                 width: 100%;
             }
+            .contct {
+                margin-left: 0% !important;
+            }
+            .contact1 {
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+                outline: none;
+                font-size: 14px;
+                font-family: poppins;
+                font-weight: bolder;
+                background-color: #ffffff;
+                border-radius: 4px;
+            }
+            .contact2 {
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+                outline: none;
+                font-size: 14px;
+                font-family: poppins;
+                background-color: #222222;
+                border-radius: 4px;
+            }
             .txt1 {
-                font-size: 28px;
+                font-size: 24px !important;
                 padding-bottom: 0%;
             }
             .txt2 {
                 padding-top: 0%;
-                font-size: 36px;
+                font-size: 24px;
                 line-height: 135%;
                 padding-bottom: 0%;
                 margin-bottom: 2%;
             }
             .txt3 {
+                margin-left: 0% !important;
                 margin-top: 0%;
-                font-size: 16px;
+                text-align: center;
+                font-size: 12px;
                 padding-bottom: 3%;
                 margin: 0%;
-            }
-            .overlay {
-                width: 150%;
-                background-color: white;
-                -webkit-box-shadow: 0 8px 6px -6px #999;
-                -moz-box-shadow: 0 8px 6px -6px #999;
-                box-shadow: 0 8px 6px -5px rgb(129, 126, 126);
             }
             .menu {
                 background-color: white;
@@ -404,35 +352,311 @@
                 position: relative;
                 z-index: 10;
             }
+            .who-we-serve {
+                margin-top: -10%;
+            }
+            .who-we {
+                font-size: 24px !important;
+                margin-bottom: -2%;
+            }
             .logo {
-                margin-right: 0%;
-                width: 50%;
+                margin-left: 3%;
+                width: 336px;
             }
-            .why2 h4 {
-                font-size: large;
+            .circle-overlay {
+                z-index: 1000;
+                background-size: contain;
+                -webkit-animation: spin 40s linear infinite;
+                -moz-animation: spin 40s linear infinite;
+                animation: spin 40s linear infinite;
             }
-            .exp1,
-            .exp2 {
-                padding-bottom: 15%;
+            .containr {
+                position: relative;
+                visibility: visible;
             }
-            .fotertxt {
-                font-size: x-small;
+            .containr img {
+                position: absolute;
+                margin-top: 20%;
             }
-            .cont {
-                font-size: small;
+            .startup {
+                margin-left: 0%;
             }
-            .why1 {
-                font-size: 36px;
+            .what-we-do {
+                background: white !important;
             }
-            .whycen,
-            .what,
-            .how,
-            .team,
+            .what-text {
+                font-size: 24px;
+            }
+            .what-we-do-text {
+                font-size: 12px;
+                line-height: 20px;
+                padding-right: 0%;
+                color: rgb(32, 32, 32);
+            }
+            .client {
+                font-size: 18px;
+            }
+            .partners img {
+                width: 730px !important;
+                height: 80px;
+            }
+            .centella-case-image img {
+                width: 100% !important;
+                height: 90% !important;
+            }
+            .view-box {
+                width: 340px !important;
+                height: 300px !important;
+                border-radius: 20px;
+                top: 0%;
+                left: 0%;
+                transform: translate(0%, 0%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0px 15px 20px rgba(88, 88, 88, 0.4);
+            }
+            #test {
+                display: flex;
+                transition: .5s;
+            }
+            .user {
+                width: 30px;
+                text-align: center;
+                padding: 5px 7px !important;
+                box-sizing: border-box;
+                background-color: white;
+                box-shadow: 0px 15px 20px rgba(88, 88, 88, 0.4);
+            }
+            .user img {
+                width: 7% !important;
+                margin-left: 32% !important;
+                border-radius: 50%;
+                margin-top: 20px !important;
+                border: 5px solid #e8ecff !important;
+                position: relative !important;
+            }
+            .user p {
+                font-size: 12px !important;
+                color: #000000;
+                line-height: 20px !important;
+                padding-right: 32% !important;
+                padding-left: 32% !important;
+                margin: 35px 0 30px;
+                margin-top: 2% !important;
+                margin-bottom: 2% !important;
+            }
+            .user span {
+                font-size: 10px !important;
+            }
+            .user h3 {
+                font-size: 14px !important;
+                margin-bottom: 5% !important;
+                line-height: 16px !important;
+            }
+            .user h1 {
+                font-size: 16px !important;
+                margin-left: 40% !important;
+                margin-top: -4% !important;
+                text-align: left;
+            }
+            .controls {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            .controls span {
+                width: 10px !important;
+                height: 10px !important;
+                background: linear-gradient(#3BF3C7, #1FAEFF);
+                border-radius: 15px;
+                margin: 5px 5px;
+                margin-bottom: 8% !important;
+                cursor: pointer;
+                transition: .5s;
+            }
+            .controls .active {
+                width: 45px !important;
+            }
+            .test-text {
+                font-size: 24px;
+            }
+            .Our-team {
+                padding-top: 30% !important;
+            }
+            .rish {
+                margin-left: 0% !important;
+            }
+            .contact-text {
+                font-size: 24px;
+                line-height: 30px !important;
+            }
             .contactus {
-                font-size: 40px;
+                width: 340px !important;
+                height: 900px !important;
+                border-radius: 20px;
+                margin-top: -30% !important;
+                top: 0%;
+                left: 50%;
+                transform: translate(-50%, 10%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
             }
-            .dsg {
+            .lets-talk {
+                width: 340px !important;
+                height: 700px !important;
+                text-align: center;
+                padding: 0px 0px;
+                border-radius: 10px;
+                box-sizing: border-box;
+                background-color: white;
+                box-shadow: 0px 15px 20px rgba(88, 88, 88, 0.4);
+            }
+            .fill-text {
+                margin-top: -15% !important;
+                font-size: 14px;
+                line-height: 18px;
+            }
+            .form .info p {
+                text-align: center;
+                color: #999;
+                text-transform: none;
+                font-weight: 600;
+                font-size: 12px !important;
+                margin-top: 2px
+            }
+            .form .info i {
+                color: #F6AA93;
+            }
+            .form form h1 {
+                font-size: 18px;
+                background: #F6AA93 none repeat scroll 0% 0%;
+                color: rgb(255, 255, 255);
+                padding: 22px 25px;
+                border-radius: 5px 5px 0px 0px;
+                margin: auto;
+                text-shadow: none;
+                text-align: left
+            }
+            .form form {
+                max-width: 900px;
+                width: 140% !important;
+                margin-top: -20% !important;
+                padding-top: 0%;
+                padding-left: 0% !important;
+                padding-right: 0% !important;
+                padding-bottom: 2%;
+                margin-bottom: 5%;
+                margin-left: -15% !important;
+                background-color: transparent;
+                overflow: hidden;
+            }
+            .form p span {
+                color: #F00;
+            }
+            .form p {
+                font-family: poppins !important;
+                margin: 0px;
+                text-align: left !important;
                 font-size: 16px;
+                font-weight: 600;
+                line-height: 1;
+                color: #000000;
+            }
+            .form h1 {
+                text-align: left !important;
+                text-shadow: 1px 1px 0px #FFF;
+                margin: 0px 0px 0px 0px !important;
+            }
+            .form input {
+                border-radius: 0px 5px 5px 0px;
+                border: 1px solid #7365AD;
+                margin-bottom: 15px !important;
+                width: 88% !important;
+                font-size: 12px;
+                height: 30px !important;
+                background: #EFEFEF;
+                float: left;
+                padding: 0px 15px;
+            }
+            .form a {
+                text-decoration: inherit
+            }
+            .form textarea {
+                border-radius: 0px 5px 5px 0px;
+                border: 1px solid #927ee2;
+                margin: 0;
+                background: #EFEFEF;
+                width: 88% !important;
+                height: 30px !important;
+                float: left;
+                font-size: 12px;
+                padding: 6px 15px;
+            }
+            .form-group {
+                overflow: hidden;
+                clear: both;
+            }
+            .form .icon-case {
+                width: 25px !important;
+                float: center;
+                border-radius: 5px 0px 0px 5px;
+                background: linear-gradient(#0FFFC5, #0085FF);
+                height: 30px !important;
+                position: relative;
+                text-align: center;
+                line-height: 30px !important;
+            }
+            .form i {
+                color: rgb(0, 0, 0);
+            }
+            .contentform {
+                padding: 40px 0px !important;
+            }
+            .contact-button {
+                margin-left: 20% !important;
+                box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+                display: flex;
+                outline: none;
+                color: rgb(0, 0, 0);
+                font-family: poppins;
+                font-size: 14px !important;
+                font-weight: bold;
+                padding-top: 1% !important;
+                padding-bottom: 1% !important;
+                background-color: #00ccff;
+                border-radius: 4px;
+            }
+            .contact-button:hover {
+                background-color: #3fff2d;
+                box-shadow: 0px 1px 3px rgba(88, 88, 88, 0.4);
+                transform: translateY(-7px);
+                color: #000000;
+            }
+            .contactform {
+                width: 100%;
+                float: center;
+                box-sizing: border-box;
+                padding: 0px 0px 0px 0px;
+            }
+            .validation {
+                display: none;
+                margin: 0 0 10px;
+                font-weight: 400;
+                font-size: 13px;
+                color: #DE5959;
+            }
+            .footer-left img {
+                margin-left: 1% !important;
             }
         }
         
@@ -467,7 +691,7 @@
             -webkit-animation: spin 40s linear infinite;
             -moz-animation: spin 40s linear infinite;
             animation: spin 40s linear infinite;
-            animation-delay: 3s;
+            animation-delay: 1s;
         }
         
         .contact1 {
@@ -505,11 +729,11 @@
             color: #000000;
         }
         
-        #containr {
+        .containr {
             position: relative;
         }
         
-        #containr img {
+        .containr img {
             position: absolute;
             margin-top: -30%;
         }
@@ -522,10 +746,6 @@
         
         body {
             font-family: poppins;
-        }
-        
-        .whatwedo {
-            background-image: url(images/what_bg.png);
         }
         
         .casestudy h2 {
@@ -749,29 +969,26 @@
             padding: 40px 30px;
         }
         
-        .bouton-contact {
-            background: #14d0ff;
-            color: #000000;
-            text-align: center;
-            margin-left: 140px;
-            width: 40%;
-            padding-top: 1%;
-            padding-bottom: 1%;
-            padding-left: 7%;
-            padding-right: 7%;
-            border: 0;
-            border-radius: 5px 5px 5px 5px;
+        .contact-button {
+            margin-left: 32%;
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
             cursor: pointer;
-            margin-top: 0px;
+            display: flex;
+            outline: none;
+            color: rgb(0, 0, 0);
             font-family: poppins;
+            font-size: large;
             font-weight: bold;
-            font-size: 24px;
+            background-color: #00ccff;
+            border-radius: 4px;
         }
         
-        .bouton-contact:hover {
-            transition: .5s;
-            background: #0AFFA7;
-            border-radius: 5px;
+        .contact-button:hover {
+            background-color: #3fff2d;
+            box-shadow: 0px 1px 3px rgba(88, 88, 88, 0.4);
+            transform: translateY(-7px);
+            color: #000000;
         }
         
         .contactform {
@@ -952,7 +1169,7 @@
         
         @media (max-width: 880px) {
             .footer-distributed {
-                font: bold 14px sans-serif;
+                font: bold 14px poppins;
             }
             .footer-distributed .footer-left,
             .footer-distributed .footer-center,
@@ -960,13 +1177,21 @@
                 display: block;
                 width: 100%;
                 margin-bottom: 40px;
-                text-align: center;
+                text-align: left;
             }
             .footer-distributed .footer-center i {
                 margin-left: 0;
             }
         }
     </style>
+
+
+
+</head>
+
+<body>
+
+
     <div class="mx-0  naav">
         <header class=" fixed nav-down mx-auto  w-full ">
 
@@ -981,14 +1206,14 @@
     <span class=" navicon flex object-center relative " ><i class="fa fa-bars"></i> </span>
   </label>
                     <ul class="menu text-black border-b md:border-none text-lg flex justify-end list-reset m-0    " style="font-weight: bold;font-family: poppins;">
-                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="index.html#about">Who we serve</a></li>
-                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="index.html#team">Portfolio</a></li>
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="#who-we-serve">Who we serve</a></li>
+                        <li class=" border-t md:border-none"><a class="m-4 hover:text-blue-500" href="#portfolio">Portfolio</a></li>
 
-                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="centella-discovery.html">Testimonials</a></li>
-                        <li class="active border-t md:border-none"><a class="m-4 mr-40 hover:text-blue-600" href="index.html#whycentella">Team</a></li>
+                        <li class="active border-t md:border-none"><a class="m-4 hover:text-blue-600" href="#testimonial">Testimonials</a></li>
+                        <li class="active border-t md:border-none"><a class="m-4 mr-40 hover:text-blue-600" href="#team">Team</a></li>
 
                     </ul>
-                    <button class="contact  menu text-lg   py-0 px-8   rounded text-black mt-0">Get Quote <span></span><span></span><span></span><span></span></button>
+                    <button class="contact  menu text-lg   py-0 px-8   rounded text-black mt-0"> <a href="#connect"> Get Quote </a><span></span><span></span><span></span><span></span></button>
 
 
                 </nav>
@@ -996,47 +1221,40 @@
         </header>
     </div>
 
-
-</head>
-
-<body>
-
-
     <section class="hero " style="background-image: url(images/BG.jpg);background-size: cover;margin-top: 2%;background-attachment: fixed;">
 
         <div class=" hero1 mx-auto flex px-0 back md:flex-row flex-col items-center ">
 
 
             <div class="container txt md:w-4/5 flex flex-col items-center  " style="margin-left: auto;">
-                <h4 class="txt1  text-white mb-2 " style="text-align: left;font-family:poppins;font-weight: 800;font-size: 45px;margin-left: 1%; ">We Turn <span style="color: #fff000;"> Product </span> Ideas
+                <h4 class="txt1  text-white mb-2 " style="text-align: left;font-weight: 800;margin-left:5%;font-size: 45px; ">We Turn <span style="color: #fff000;"> Product </span> Ideas
                 </h4>
-                <h4 class="txt2 text-5xl text-white mb-8 text-left " style="font-family:poppins;font-weight: 1000; margin-left: -1%;">Into <span style="color: #fff000;"> Digital </span>Realities
+                <h4 class="txt2 text-5xl text-white mb-8 text-left " style="font-family:poppins;font-weight: 1000; margin-left: 3%;">Into <span style="color: #fff000;"> Digital </span>Realities
                 </h4>
-                <h4 class="txt3 text-xl  text-white mb-12 text-left" style="font-family: 'Montserrat';font-weight: 500;margin-left: -10%; ">We help Entrepreneurs and Businesses <br> to launch high value products</h4>
+                <h4 class="txt3 text-xl  text-white mb-12 text-left" style="font-weight: 500;margin-left: -10%; ">We help Entrepreneurs and Businesses <br> to launch high value products</h4>
 
 
-                <div class="contb flex justify-left " style="margin-left: -10%;">
-                    <button class=" contact1 text-black py-2 px-10 text-lg"> <a href="#consult ">Let's Talk</a></button>
 
-                    <button class=" contact2 ml-16 text-white py-2 px-8  text-lg "><a href="#about ">Know More</a></button>
+                <div class="flex contct -ml-24">
+                    <button class="inline-flex text-black border-0 py-2 px-8 focus:outline-none contact1 rounded text-lg">Let's Talk</button>
+                    <button class="ml-16 inline-flex text-white  border-0 py-2 px-6 focus:outline-none contact2 rounded text-lg">Know More</button>
                 </div>
-
             </div>
-            <div id="containr" class="  mx-6 md:w-5/6 flex flex-col ">
-                <img class="circle-overlay" src="images/circles-left.png" alt="">
-                <img src="images/devices.png" alt="devices">
+            <div class="containr mx-6 md:w-5/6 flex flex-col ">
+                <img class="circle-overlay  w-100 h-100 " src="images/circles-left.png" alt="">
+                <img src="images/devices.png " alt="devices">
             </div>
         </div>
     </section>
     </div>
-    <section class="text-black">
+    <section id="who-we-serve" class="who-we-serve text-black">
         <div class="container px-5 py-24 mx-auto">
-            <h1 class="sm:text-3xl  font-medium title-font text-center text-gray-800 " style="font-weight: bold;">Who we serve</h1>
+            <h1 class="text-3xl who-we  font-medium title-font text-center text-gray-800 " style="font-weight: bold;">Who we serve</h1>
             <div class="flex mt-2 mb-12 justify-center">
                 <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
             </div>
             <div class="flex flex-wrap sm:-m-4  -mb-10 -mt-4 md:space-y-0 space-y-6">
-                <div class="p-4 md:w-1/2 flex ml-24">
+                <div class="startup p-4 md:w-1/2 flex ml-24">
                     <div class="w-16 h-16 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
                         <img src="images/startup.png" alt="">
                     </div>
@@ -1061,27 +1279,27 @@
             </div>
         </div>
     </section>
-    <section class="text-gray-800 whatwedo " style="background-image: url(images/what.png);background-repeat: no-repeat;background-size: cover;">
+    <section class="text-gray-800 what-we-do " style="background-image: url(images/what.png);background-repeat: no-repeat;background-size: cover;">
         <div class="container  mx-auto flex px-5 py-16 md:flex-row flex-col items-center" style="padding-bottom: 10%;">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                 <img class="object-cover object-center rounded" alt="hero" src="images/what we do.png">
             </div>
             <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="title-font  text-3xl mb-4 font-medium text-gray-900" style="font-weight: bold;">What we do
+                <h1 class="title-font what-text  text-3xl mb-4 font-medium text-gray-900" style="font-weight: bold;">What we do
                 </h1>
 
-                <p class="pr-10 text-lg">We are a full-service, end-to-end product agency, handling all aspects of the digital product lifecycle, from strategy and design to engineering and growth.</p>
+                <p class="pr-10 what-we-do-text text-lg">We are a full-service, end-to-end product agency, handling all aspects of the digital product lifecycle, from strategy and design to engineering and growth.</p>
 
             </div>
         </div>
     </section>
-    <section class="text-gray-700 body-font mb-10">
-        <div class="container mx-auto flex px-5 items-center justify-center flex-col" style="padding-top: 4%;">
+    <section id="portfolio" class="text-gray-800 body-font mb-10">
+        <div class="partners container mx-auto flex px-5 items-center justify-center flex-col" style="padding-top: 4%;">
             <div class="text-center lg:w-2/3 w-full">
-                <h1 class="title-font text-2xl mb-4 font-medium text-gray-700" style="font-weight: bold;">Clients We’ve Partnered with</h1>
+                <h1 class="title-font client text-2xl mb-4 font-medium " style="font-weight: bold;">Clients We’ve Partnered with</h1>
 
             </div>
-            <img class="w-6/7 mb-10 object-cover object-center rounded" alt="partnership" src="images/partner.png">
+            <img class="w-6/7  mb-10 object-cover object-center rounded" alt="partnership" src="images/partner.png">
 
         </div>
     </section>
@@ -1092,7 +1310,7 @@
         </div>
         <div class="casestudy container mx-auto flex px-5 py-6 md:flex-row flex-col items-center">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0">
-                <img class="object-cover object-center rounded" alt="hero" src="images/cockrow.png">
+                <img class="object-cover object-center rounded" alt="cockrow-casestudy" src="images/cockrow.png">
             </div>
             <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                 <img src="images/logo.png" class="h-24 -ml-4 mb-4" alt="">
@@ -1114,13 +1332,13 @@
                     <h2 class="text-gray-900   focus:outline-none cursor-pointer rounded text-lg    ">View Case Study</h2>
                 </div>
             </div>
-            <div class=" w-5/6 mb-10 md:mb-0">
-                <img class="object-cover object-center rounded" alt="hero" src="images/centella.png">
+            <div class="centella-case-image w-5/6 mb-10 md:mb-0">
+                <img class="object-cover  object-center rounded" alt="cemtella-casestudy" src="images/centella.png">
             </div>
         </div>
     </section>
-    <div style="background-image: url(images/test_bg.png);background-size: cover;background-repeat: no-repeat;">
-        <h2 class="text-center text-3xl" style="font-weight: bold;padding-top: 2%;"> What our Clients Say</h2>
+    <div id="testimonial" style="background-image: url(images/test_bg.png);background-size: cover;background-repeat: no-repeat;">
+        <h2 class="text-center test-text text-3xl" style="font-weight: bold;padding-top: 2%;"> What our Clients Say</h2>
         <div class="view-box">
             <div id="test">
                 <div class="user">
@@ -1155,7 +1373,7 @@
             </div>
         </div>
     </div>
-    <section class="text-gray-600 body-font" style="padding-top:6%;">
+    <section id="team" class="Our-team text-gray-600 body-font" style="padding-top:10%;">
         <div class="container  px-5  mx-auto">
             <div class="flex flex-col text-center w-full mb-10">
                 <h1 class="text-3xl font-medium title-font  text-gray-900" style="font-weight: bold;">Our Team</h1>
@@ -1165,7 +1383,7 @@
             </div>
             <div class="flex flex-wrap ">
 
-                <div class="p-4 lg:w-1/4 md:w-1/2" style="margin-left: 25%;">
+                <div class="rish p-4 lg:w-1/4 md:w-1/2" style="margin-left: 25%;">
                     <div class="h-full flex flex-col items-center text-center">
                         <img alt="team" class="flex-shrink-0 rounded-lg w-full h-76 object-cover object-center mb-4" src="images/team.png">
                         <div class="w-full">
@@ -1222,21 +1440,22 @@
                 </div>
 
             </div>
+            <!--
             <div class="flex casestudy justify-center">
                 <h2 class="text-gray-900   focus:outline-none cursor-pointer rounded text-lg    ">View whole team</h2>
-            </div>
+            </div>-->
         </div>
 
     </section>
-    <div class=" text-gray-900 body-font" style="background-image: url(images/contact-bg.png);background-repeat: no-repeat;background-size: cover;">
-        <h2 class="text-4xl text-center" style="padding-top: 10%;font-weight: bold;line-height: 50px;">Have A Killer Idea? <br> Lets Break The Market</h2>
+    <div id="connect" class="get-quote  text-gray-900 body-font" style="background-image: url(images/contact-bg.png);background-repeat: no-repeat;background-size: cover;">
+        <h2 class="text-4xl contact-text text-gray-800 text-center" style="padding-top: 10%;font-weight: bold;line-height: 50px;">Have A Killer Idea? <br> Lets Break The Market</h2>
         <div class="contactus">
 
             <div class="lets-talk">
                 <section class="text-gray-800 body-font">
                     <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
                         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                            <h1 class="text-xl" style="font-weight: bold;">Fill in the form & <br> expect a call back within 48 hours </h1>
+                            <h1 class="text-xl fill-text" style="font-weight: bold;">Fill in the form & <br> expect a call back within 48 hours </h1>
                             <img class="object-cover object-center rounded" alt="hero" src="images/lets-talk.png">
                         </div>
                         <div class="form lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -1269,12 +1488,14 @@
                                         <div class="form-group">
                                             <p>Message: <span></span></p>
                                             <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-                                            <textarea name="message" placeholder="Let us know about your idea or Business" rows="14"></textarea>
+                                            <textarea name="message" placeholder="Let us Know about your business/idea" rows="14"></textarea>
                                             <div class="validation"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" id="submit" class="bouton-contact" style="font-family: Montserrat;"><h2>Submit</h2></button>
+                                <button type="submit" id="submit" class=" contact-button text-black py-2 px-10 text-lg">Submit</button>
+
+
                             </form>
                         </div>
 
@@ -1290,7 +1511,7 @@
 
             <div class="footer-left">
 
-                <img src="images/logo.png" class="h-24 -ml-4" alt="">
+                <img src="images/logo.png" class="h-24 -ml-4 footerimg" alt="">
 
                 <p class="footer-links">
                     <a href="#" class="link-1">Home</a>
@@ -1358,7 +1579,11 @@
             });
         });
     </script>
-
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
     <!--https://script.google.com/macros/s/AKfycbyKGU_7weZjdMIcVZHL2hmRXN51voYwmM9rWnc_U-QpfNOt2iMT/exec-->
 
     <script>
