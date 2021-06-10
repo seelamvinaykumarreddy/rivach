@@ -300,6 +300,28 @@ html {
         font-weight: bold;
         transition: .5s;
     }
+    .howunderline {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .howunderline h2 {
+        background-image: linear-gradient(transparent 0%, transparent 65%, yellow 65%, yellow 90%, transparent 90%, transparent);
+        display: inline;
+        font-weight: 500;
+        font-size: 36px !important;
+    }
+    .howunderline h2:after {
+        content: "";
+        display: block;
+    }
+    .p-text {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .process img {
+        margin-left: 140%;
+    }
 }
 
 .aboutbox {
@@ -434,6 +456,107 @@ html {
     justify-content: center;
     margin: auto;
     background: white;
+}
+
+.howunderline h2 {
+    background-image: linear-gradient(transparent 0%, transparent 65%, yellow 65%, yellow 90%, transparent 90%, transparent);
+    display: inline;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.howunderline h2:after {
+    content: "";
+    display: block;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.containr {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.tabs {
+    margin-top: 5% !important;
+    position: relative;
+    margin: auto;
+    border-radius: 16px;
+    width: 1080px;
+    height: 860px;
+    background: white;
+    overflow: hidden;
+    padding: 20px 30px;
+}
+
+.tabs .tab-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.tabs .tab-header>div {
+    width: calc(100%/4);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tabs .tab-header>div.active {
+    color: #0066ff;
+}
+
+.tabs .tab-indicator {
+    position: relative;
+    width: calc(100%/4);
+    height: 6px;
+    background-color: #0066ff;
+    left: 0px;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+.tabs .tab-body {
+    position: relative;
+}
+
+.tabs .tab-body>div {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+}
+
+.tabs .tab-body>div.active {
+    top: 0px;
+    width: 1080px;
+    opacity: 1;
+    transform: scale(1);
 }
 
 @keyframes zom-out {
