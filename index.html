@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim:wght@200;300;400;500;600&display=swap">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
 
     <link rel="stylesheet" href="./js/modal-video.min.css">
@@ -54,7 +55,7 @@
                     <a href="#team" class="nav-link">Events & Stories</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#connect" class="nav-link contact">Contact us</a>
+                    <a href="#contact" class="nav-link contact">Contact us</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -69,25 +70,25 @@
 
         <div class="hero1  mx-auto flex px-0 back md:flex-row flex-col items-center ">
             <div class="banner">
-                <img id="ban" style="opacity: 80%;" src="./images/bg3.jpg" alt="">
+                <img id="ban" style="opacity: 90%;" src="./images/bg3.jpg" alt="">
             </div>
 
-            <div data-aos="fade-up" class="txt md:w-4/5 flex flex-col text-white items-center">
+            <div data-aos="zoom-in-down" data-aos-delay="1500" class="txt md:w-4/5 flex flex-col text-white items-center">
                 <h4 class="txt1 text-5xl   text-center  mb-2 p-0" style="font-family:  Raleway;font-weight: 800;">We Make Your Moments
                 </h4>
                 <h4 class="txt2 text-5xl    text-center   mb-8 p-2" style="font-family:  Raleway;font-weight: 1000;">More Memorable
                 </h4>
 
 
-                <div class="contb  flex justify-center">
-                    <button class="contact2 ml-0   py-2 px-6  rounded text-xl" style="font-family: Raleway;font-weight: bold;"><a href="#about">Book an event</a></button>
+                <div data-aos="zoom-in-up" data-aos-delay="2500" class="contb  flex justify-center">
+                    <button class="contact2 ml-0   py-2 px-6  rounded text-xl" style="font-family: Raleway;font-weight: bold;"><a href="#contact">Book an event</a></button>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="about text-white body-font" style="background-image: url(./images/aboutbg.png);background-size: cover;background-repeat: no-repeat;">
-        <h1 class="whowe text-center text-gray-200 text-6xl mt-6 mb-0 font-medium " style="font-family: raleway;">What we do</h1>
+        <h1 class="whowe text-center text-gray-200 text-5xl mt-6 mb-0 font-medium " style="font-family: raleway;">What we do</h1>
         <div class="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
 
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-0 md:mb-0">
@@ -183,11 +184,11 @@
     </section>
     <section>
 
-        <div class="container mt-10 bg-white mx-auto">
+        <div id="process" class="container mt-20 bg-white mx-auto">
             <div class="howunderline  flex justify-end pr-48 pt-8 ">
                 <h2 class="text-gray-900  how  focus:outline-none cursor-pointer rounded text-5xl" style="font-family: raleway;font-weight: bold;"> How it works </h2>
             </div>
-            <div class="container bg-white mx-auto flex px-5 py-4 md:flex-row flex-col items-center">
+            <div class="container bg-white  mx-auto flex px-5 rounded py-4 md:flex-row flex-col items-center">
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                     <img class="object-cover object-center rounded" alt="hero" src="./images/process.png">
                 </div>
@@ -248,7 +249,8 @@
         </div>
         </div>
     </section>
-    <div class="tabs text-black">
+    <h1 id="contact" class="text-6xl text-white mt-36 text-center" style="font-family: raleway;"> Contact us</h1>
+    <div class="tabs text-black ">
         <div class="tab-header">
             <div class="active">
                 <i class="fas fa-video"></i> Online
@@ -262,41 +264,100 @@
         <div class="tab-body">
 
             <div class="active">
-                <h1 class="text-center mb-3 text-4xl" style="font-family: raleway;font-weight: bold;">Book your slot now</h1>
-                <h2 class="text-center text-xl" style="font-family: raleway;">Your are just one step away to reach us</h2>
+                <h1 class="text-center mr-16 mt-6 mb-3 text-4xl" style="font-family: raleway;font-weight: bold;color: #210070;">Book your slot now</h1>
+                <h2 class="text-center mr-16 -mb-6 text-xl" style="font-family: raleway;font-weight: 600;">Your are just one step away to reach us</h2>
                 <!-- Calendly inline widget begin -->
                 <div class="calendly-inline-widget" data-url="https://calendly.com/vinaykumarreddy/15min" style="max-width:1020px;height:660px;"></div>
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                 <!-- Calendly inline widget end -->
             </div>
-            <div class="">
-                <h1 class="text-center mb-3 text-4xl" style="font-family: raleway;font-weight: bold;">Book your slot now</h1>
-                <h2 class="text-center text-xl" style="font-family: raleway;">Your are just one step away to reach us</h2>
+            <div>
+                <h1 class="text-center mb-3 mr-16 mt-6 text-4xl" style="font-family: raleway;font-weight: bold;color: #210070;">Book your slot now</h1>
+                <h2 class="text-center mb-5 mr-16 text-xl" style="font-family: raleway;font-weight: bold;">Your are just one step away to reach us</h2>
                 <div class="containr">
-                    <form action="/action_page.php">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <form action="">
+                        <label for="fname">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
 
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                        <label for="country">Country</label>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Your email address..">
+                        <label for="number">Number:</label>
+                        <input type="number" id="number" name="number" placeholder="Your phone number..">
+                        <!--    <label for="country">Country</label>
                         <select id="country" name="country">
                         <option value="australia">Australia</option>
                         <option value="canada">Canada</option>
                         <option value="usa">USA</option>
                       </select>
+--><label for="place">Place of Appointment:</label>
+                        <input type="text" id="place" name="place" placeholder="Place of Appointment..">
+                        <label for="subject">Type of event:</label>
+                        <textarea id="subject" name="event_type" placeholder="Describe your event.." style="height:50px"></textarea>
 
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                        <input type="submit" value="Submit">
+                        <input class="submit" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <section>
 
+        <footer class="footer-distributed mt-10">
+
+            <div class="footer-left -mt-16">
+
+                <img src="./images/logo.png" class="h-28  footerimg" alt="">
+
+                <p class="footer-links">
+                    <a href="#who-we-serve" class="link-1">About us</a>
+
+                    <a href="#connect">Work with us</a>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="TandC's.html">T&C</a>
+                </p>
+
+                <p class="footer-company-name">Copyright © 2020 Cockrow. All rights reserved.</p>
+            </div>
+
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>Follow us on </span> </p>
+                <div class="social-container">
+                    <ul class="social-icons">
+                        <li><a href="https://www.instagram.com/centella.scientific/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/centellascient1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/Centella-Scientific-103572945211581" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p><span>Contact us</span>+91 0000 000 000</p>
+                </div>
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Nizampet</span> Hyderabad, Telangana</p>
+                </div>
+
+                <!--<div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1.555.555.5555</p>
+                </div>
+-->
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">cockrow@gmail.com</a></p>
+                </div>
+
+            </div>
+
+        </footer>
+    </section>
 
     <script src="./js/aos.js"></script>
     <script>
@@ -312,18 +373,19 @@
 
 </body>
 <script>
-    let tabHeader = document.getElementsByClassName("tab-header")[0];
-    let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-    let tabBody = document.getElementsByClassName("tab-body")[0];
+    let tabs = document.querySelector(".tabs");
+    let tabHeader = tabs.querySelector(".tab-header");
+    let tabBody = tabs.querySelector(".tab-body");
+    let tabIndicator = tabs.querySelector(".tab-indicator");
+    let tabHeaderNodes = tabs.querySelectorAll(".tab-header > div");
+    let tabBodyNodes = tabs.querySelectorAll(".tab-body > div");
 
-    let tabsPane = tabHeader.getElementsByTagName("div");
-
-    for (let i = 0; i < tabsPane.length; i++) {
-        tabsPane[i].addEventListener("click", function() {
-            tabHeader.getElementsByClassName("active")[0].classList.remove("active");
-            tabsPane[i].classList.add("active");
-            tabBody.getElementsByClassName("active")[0].classList.remove("active");
-            tabBody.getElementsByTagName("div")[i].classList.add("active");
+    for (let i = 0; i < tabHeaderNodes.length; i++) {
+        tabHeaderNodes[i].addEventListener("click", function() {
+            tabHeader.querySelector(".active").classList.remove("active");
+            tabHeaderNodes[i].classList.add("active");
+            tabBody.querySelector(".active").classList.remove("active");
+            tabBodyNodes[i].classList.add("active");
 
             tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
         });
