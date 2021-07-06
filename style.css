@@ -51,6 +51,17 @@ html {
     background-color: #ffffff;
 }
 
+.bar2 {
+    display: flex;
+    justify-self: end;
+    width: 26px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+}
+
 .nav-menu {
     display: flex;
     justify-content: end;
@@ -60,9 +71,17 @@ html {
 
 .nav-item {
     margin-left: 5rem;
+    color: #ffffff;
 }
 
 .nav-link {
+    font-size: 18px;
+    font-family: raleway;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav-link2 {
     font-size: 18px;
     font-family: raleway;
     font-weight: bold;
@@ -76,6 +95,20 @@ html {
 .nav-logo {
     margin-left: -1%;
     margin-right: 40%;
+}
+
+.story {
+    box-shadow: 4px 8px 10px #4e4e4e;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 100 !important;
+    margin-left: 4%;
+    margin-top: -2%;
+    width: 482px;
+}
+
+.blog {
+    margin-bottom: 15%;
 }
 
 
@@ -98,11 +131,11 @@ html {
         font-size: 2.1rem;
         margin-left: -12% !important;
     }
-    .nav-link {
+    .nav-link2 {
         font-size: 24px;
         font-family: raleway;
         font-weight: bold;
-        color: #000;
+        color: rgb(0, 0, 0);
     }
     .nav-menu {
         position: fixed;
@@ -149,7 +182,7 @@ html {
     .contact2 {
         position: relative;
         display: inline-block;
-        margin-top: -20%;
+        margin-top: -0%;
         padding: 3px 10px !important;
         font-size: small !important;
         text-decoration: none;
@@ -158,6 +191,46 @@ html {
         font-family: Raleway;
         font-weight: bold;
         transition: .5s;
+    }
+    .story {
+        box-shadow: 4px 8px 10px #888888;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 100 !important;
+        margin-left: 4%;
+        margin-top: -2%;
+        width: 252px;
+    }
+    .story h2 {
+        font-size: 9px !important;
+        margin-bottom: 0;
+    }
+    .story h1 {
+        margin-bottom: 0;
+        font-size: 12px !important;
+    }
+    .story p {
+        margin-bottom: 16px;
+        font-size: 10px;
+    }
+    .story a {
+        font-size: 10px;
+        margin-right: 10%;
+        margin-bottom: 0%;
+    }
+    .head1 {
+        margin-right: 0%;
+    }
+    .head3 {
+        margin-left: 10%;
+    }
+    .head1 img,
+    .head3 img {
+        width: 286px;
+    }
+    .head2 {
+        width: 660px;
+        margin-left: -5%;
     }
     .logo {
         width: 116px;
@@ -228,7 +301,7 @@ html {
         width: 30% !important;
     }
     .footerimg {
-        margin-left: -5% !important;
+        margin-left: -2% !important;
     }
 }
 
@@ -247,6 +320,78 @@ html {
         margin-left: -1px !important;
         background: radial-gradient(ellipse, #00B5F5, #000000 500px);
     }
+    .story {
+        box-shadow: 4px 8px 10px #888888;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        margin-left: 4%;
+        margin-top: -2%;
+        width: 242px;
+        height: 120px;
+    }
+    .blog {
+        margin-bottom: 15% !important;
+    }
+    .story h2 {
+        margin-top: -20px;
+        font-size: 7px !important;
+        margin-bottom: 0;
+    }
+    .story h1 {
+        margin-bottom: 0;
+        font-size: 10px !important;
+    }
+    .story p {
+        margin-bottom: 12px;
+        font-size: 8px;
+    }
+    .story a {
+        font-size: 8px;
+        margin-right: 10%;
+        margin-bottom: 0%;
+    }
+    .contb {
+        margin-top: -10% !important;
+    }
+    .gallery {
+        font-size: 28px;
+        margin-bottom: -20%;
+    }
+    .head {
+        margin-bottom: -30% !important;
+    }
+    .headertext {
+        margin-bottom: -20% !important;
+    }
+    .head1 {
+        margin-right: 0%;
+    }
+    .head3 {
+        margin-left: 10%;
+    }
+    .head1 img,
+    .head3 img {
+        width: 306px;
+    }
+    .head2 {
+        margin-top: 6%;
+        width: 600px;
+        margin-left: -5%;
+    }
+    .head {
+        padding-top: 0%;
+    }
+    .vendor-text {
+        margin-top: 10%;
+        margin-bottom: -5%;
+        font-size: 28px !important;
+    }
+    .apply {
+        margin-bottom: -50% !important;
+    }
+    .joining {
+        font-size: 24px !important;
+    }
     .about {
         background: black !important;
     }
@@ -262,7 +407,7 @@ html {
         width: 50%;
         height: 5%;
     }
-    .nav-link {
+    .nav-link2 {
         font-size: 24px;
         font-family: raleway;
         font-weight: bold;
@@ -313,7 +458,7 @@ html {
     .contact2 {
         position: relative;
         display: inline-block;
-        margin-top: -20%;
+        margin-top: -0%;
         padding: 3px 10px !important;
         font-size: small !important;
         text-decoration: none;
@@ -377,6 +522,18 @@ html {
     .eventbutton {
         margin-top: -5%;
         margin-left: 20% !important;
+    }
+    .download {
+        position: relative;
+        justify-content: center !important;
+        padding: 1px 1px !important;
+        font-size: 14px;
+        text-decoration: none;
+        color: #ffffff;
+        background: linear-gradient(145deg, #37C3A1, #0013B0);
+        font-family: Raleway;
+        font-weight: bold;
+        transition: .5s;
     }
     .viewMoreEvents {
         font-size: 16px;
@@ -583,6 +740,18 @@ html {
     position: relative;
     justify-content: center !important;
     padding: 8px 40px;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(145deg, #37C3A1, #0013B0);
+    font-family: Raleway;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.download {
+    position: relative;
+    justify-content: center !important;
+    padding: 10px 20px;
     text-decoration: none;
     color: #ffffff;
     background: linear-gradient(145deg, #37C3A1, #0013B0);
@@ -1102,4 +1271,15 @@ input[type=submit] {
 .image__description {
     font-size: 1.25em;
     margin-top: 0.25em;
+}
+
+.highlight {
+    height: 600px;
+    width: 100%;
+    margin: 20px;
+    background: radial-gradient(ellipse, #00B5F5, #000000 500px);
+}
+
+.blogs {
+    margin-bottom: -20%;
 }
