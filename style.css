@@ -233,15 +233,22 @@ html {
 }
 
 @media only screen and (min-width:276px) and (max-width: 767px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
     .high {
         font-size: 28px;
         margin-bottom: -16%;
     }
     .highlight {
         height: 650px !important;
-        width: 100%;
-        margin: 2px;
+        width: 101%;
+        margin-left: -1px !important;
         background: radial-gradient(ellipse, #00B5F5, #000000 500px);
+    }
+    .about {
+        background: black !important;
     }
     .image {
         position: relative;
@@ -298,7 +305,7 @@ html {
         width: 100vw;
         height: 100vh;
         padding-bottom: 0%;
-        margin-bottom: -80%;
+        margin-bottom: -100%;
         background-blend-mode: overlay;
         background-repeat: no-repeat;
         background-size: cover;
@@ -322,12 +329,18 @@ html {
         margin-left: 4%;
     }
     .txt {
-        margin-top: 55%;
-        margin-left: 5% !important;
+        margin-top: 42%;
+        margin-left: 0% !important;
+    }
+    .image__title {
+        font-size: 16px !important;
+    }
+    .image__description {
+        font-size: small !important;
     }
     .banner {
-        width: 200vw !important;
-        height: 160vh !important;
+        width: 100vw !important;
+        height: 100vh !important;
         position: absolute;
     }
     .banner img {
@@ -484,6 +497,7 @@ html {
 }
 
 body {
+    overflow: hidden;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 0;

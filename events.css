@@ -472,6 +472,18 @@ html {
     transition: .5s;
 }
 
+.download {
+    position: relative;
+    justify-content: center !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(145deg, #37C3A1, #0013B0);
+    font-family: Raleway;
+    font-weight: bold;
+    transition: .5s;
+}
+
 .eventbutton {
     margin-left: 40%;
 }
