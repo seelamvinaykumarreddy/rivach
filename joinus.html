@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cockrow Events</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim:wght@200;300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tangerine:wght@200;300;400;500;600&display=swap">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $(".overlay").css("background", "#FFFFFF");
+                    $(".overlay").css("color", "#FFFFFF")
+                    $(".overlay").css('box-shadow', '0 8px 6px -5px rgb(129, 126, 126)');
+
+
+                } else {
+                    $(".overlay").css("background", "rgb(0,0,0,.1)");
+                    $(".overlay").css('box-shadow', '0px 0px 0px 0px rgb(129, 126, 126)');
+                    $(".overlay").css("color", "#FFFFFF");
+
+                }
+            })
+        })
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <link rel="stylesheet" href="./js/aos.css">
+    <link rel="stylesheet" href="./js/aos.js">
+    <link rel="stylesheet" href="events.css">
+    <style>
+        body,
+        html {
+            background: white !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav data-aos="fade-down" data-aos-duration="2000" class="navbar">
+            <a href="index.html" class="nav-logo"><img src="./images/logo.png" class="h-28 w-28" alt=""></a>
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">Events & Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link contact">Contact us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <footer class="footer-distributed mt-10">
+
+        <div class="footer-left -mt-16">
+
+            <img src="./images/logo.png" class="h-28  footerimg" alt="">
+
+            <p class="footer-links">
+                <a href="#who-we-serve" class="link-1">About us</a>
+
+                <a href="#connect">Work with us</a>
+                <a href="privacypolicy.html">Privacy Policy</a>
+                <a href="TandC's.html">T&C</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2020 Cockrow. All rights reserved.</p>
+        </div>
+
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Follow us on </span> </p>
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/centella.scientific/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/centellascient1" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/Centella-Scientific-103572945211581" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p><span>Contact us</span>+91 0000 000 000</p>
+            </div>
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Nizampet</span> Hyderabad, Telangana</p>
+            </div>
+
+            <!--<div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1.555.555.5555</p>
+                </div>
+-->
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">cockrow@gmail.com</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+    </section>
+
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+    </script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+
+
+</html>
